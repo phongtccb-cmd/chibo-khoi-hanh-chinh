@@ -1,3 +1,8 @@
 name = "chibo-khoi-hanh-chinh"
 compatibility_date = "2026-10-12"
 pages_build_output_dir = "."
+
+[[d1_databases]]
+binding = "OPINIONS_DB"
+database_name = "party-opinions-production"
+database_id = "2594c9a9-37a0-420f-a4a8-8761b3964f71"
