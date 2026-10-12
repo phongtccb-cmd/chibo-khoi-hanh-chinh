@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7c1d2d">
+  <meta name="description" content="Cổng thông tin Chi bộ khối Hành chính - Bệnh viện Đa khoa Thủ Đức.">
+  <title>Lấy ý kiến kết nạp Đảng | Chi bộ khối Hành chính</title>
+  <style>
+    :root{color-scheme:light;--red:#7c1d2d;--red-dark:#5b1420;--gold:#c49a55;--ink:#20242a;--muted:#65707c;--line:#e6e8eb;--paper:#fff;--wash:#f6f4f1;--green:#176b4d;--shadow:0 16px 48px #21140d12}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--wash);color:var(--ink);font:16px/1.6 "Segoe UI",Arial,sans-serif}
+    a{color:inherit}
+    .topline{height:5px;background:linear-gradient(90deg,var(--red-dark),var(--red),var(--gold))}
+    .wrap{width:min(900px,calc(100% - 36px));margin:0 auto}
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 0}
+    .identity{display:flex;gap:13px;align-items:center;text-decoration:none}
+    .seal{display:grid;place-items:center;width:48px;height:48px;border:2px solid var(--gold);border-radius:50%;color:var(--red);font-weight:800;font-size:12px}
+    .identity strong{display:block;color:var(--red-dark);font-size:16px}
+    .identity small{display:block;color:var(--muted);font-size:12px}
+    .hero{position:relative;overflow:hidden;border-radius:22px;padding:clamp(28px,5vw,52px);color:#fff;background:linear-gradient(115deg,#50121f 0%,#7c1d2d 58%,#9b4a43 100%);box-shadow:var(--shadow)}
+    .hero:after{content:"";position:absolute;width:310px;height:310px;right:-70px;top:-110px;border:1px solid #ffffff30;border-radius:50%;box-shadow:0 0 0 25px #ffffff0a,0 0 0 55px #ffffff08}
+    .eyebrow{margin:0 0 8px;color:#f0d7ac;font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+    h1{max-width:720px;margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(32px,5vw,48px);font-weight:600;line-height:1.12}
+    .hero p:not(.eyebrow){max-width:650px;margin:12px 0 0;color:#f8e9e5;font-size:16px}
+    main{padding-bottom:48px}
+    .formcard{margin:22px 0 46px;padding:clamp(20px,4vw,34px);border:1px solid var(--line);border-radius:18px;background:var(--paper);box-shadow:var(--shadow)}
+    .formintro{margin:0 0 22px;color:var(--muted)}
+    .candidate{margin:0 0 20px;padding:16px 18px;border-left:4px solid var(--gold);border-radius:8px;background:#fbf8f1}
+    .candidate strong{display:block;color:var(--red-dark);font-size:19px}
+    .candidate span{color:var(--muted);font-size:14px}
+    fieldset{min-width:0;margin:20px 0;padding:0;border:0}
+    legend{width:100%;margin-bottom:8px;color:var(--red-dark);font-weight:800}
+    .field{margin:12px 0}
+    label{display:block;margin-bottom:6px;font-weight:650}
+    input,textarea{width:100%;padding:12px 13px;border:1px solid #cfd4da;border-radius:9px;background:#fff;color:var(--ink);font:inherit}
+    textarea{min-height:78px;resize:vertical}
+    input:focus,textarea:focus{outline:3px solid #7c1d2d25;border-color:var(--red)}
+    .required{color:var(--red)}
+    .choices{display:flex;flex-wrap:wrap;gap:12px}
+    .choice{display:flex;align-items:center;gap:9px;padding:11px 14px;border:1px solid var(--line);border-radius:9px;background:#fff}
+    .choice input{width:auto;accent-color:var(--red)}
+    .privacy{padding:12px 15px;border-radius:9px;background:#fff6e9;color:#665035;font-size:13px}
+    .submit{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 20px;border:0;border-radius:9px;background:var(--red);color:#fff;font:inherit;font-weight:800;cursor:pointer}
+    .submit:hover{background:var(--red-dark)}
+    .submit:disabled{opacity:.65;cursor:wait}
+    .status{min-height:26px;margin:12px 0 0;font-weight:650}
+    .status.error{color:#a32020}.status.success{color:var(--green)}
+    footer{padding:22px 0 34px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+    @media(max-width:520px){.wrap{width:min(100% - 24px,900px)}header{align-items:flex-start}.identity small{max-width:200px}.hero{border-radius:15px}.choices{display:grid}}
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <div class="wrap">
+    <header>
+      <div class="identity">
+        <span class="seal" aria-hidden="true">CB</span>
+        <span><strong>CHI BỘ KHỐI HÀNH CHÍNH</strong><small>Bệnh viện Đa khoa Thủ Đức</small></span>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">Chi bộ khối Hành chính</p>
+        <h1>Lấy ý kiến xét kết nạp Đảng</h1>
+        <p>Đề nghị các đồng chí nhận xét và biểu quyết đối với quần chúng ưu tú dưới đây.</p>
+      </section>
+
+      <section id="lay-y-kien" aria-labelledby="opinion-title">
+        <form id="opinion-form" class="formcard">
+          <h2 id="opinion-title">Ý kiến của đồng chí</h2>
+          <div class="candidate"><strong>Phạm Cao Cường</strong><span>Quần chúng ưu tú · Nhân viên Phòng Công tác xã hội</span></div>
+          <p class="formintro">Đăng nhập bằng email cá nhân đã được Chi bộ cấp quyền. Mỗi tài khoản gửi một phiếu.</p>
+          <fieldset>
+            <legend>1. Về tư tưởng, chính trị</legend>
+            <div class="field"><textarea id="political" name="political" aria-label="Nhận xét về tư tưởng, chính trị" required maxlength="3000" placeholder="Lập trường, chấp hành chủ trương và động cơ phấn đấu vào Đảng..."></textarea></div>
+          </fieldset>
+          <fieldset>
+            <legend>2. Về đạo đức, lối sống</legend>
+            <div class="field"><textarea id="ethics" name="ethics" aria-label="Nhận xét về đạo đức, lối sống" required maxlength="3000" placeholder="Lối sống, tinh thần đoàn kết, ý thức tập thể, sự tín nhiệm..."></textarea></div>
+          </fieldset>
+          <fieldset>
+            <legend>3. Về năng lực công tác / học tập</legend>
+            <div class="field"><textarea id="competence" name="competence" aria-label="Nhận xét về năng lực công tác, học tập" required maxlength="3000" placeholder="Trách nhiệm, kết quả công tác và tinh thần học tập..."></textarea></div>
+          </fieldset>
+          <fieldset>
+            <legend>4. Về quan hệ quần chúng</legend>
+            <div class="field"><textarea id="relations" name="relations" aria-label="Nhận xét về quan hệ quần chúng" required maxlength="3000" placeholder="Thái độ, tinh thần hợp tác và tham gia phong trào..."></textarea></div>
+          </fieldset>
+          <fieldset>
+            <legend>5. Hạn chế, khuyết điểm (nếu có)</legend>
+            <div class="field"><textarea id="limitations" name="limitations" aria-label="Hạn chế, khuyết điểm nếu có" maxlength="3000" placeholder="Nêu ngắn gọn điểm cần tiếp tục rèn luyện; có thể để trống nếu không có ý kiến."></textarea></div>
+          </fieldset>
+          <fieldset>
+            <legend>Biểu quyết <span class="required">*</span></legend>
+            <div class="choices">
+              <label class="choice"><input type="radio" name="vote" value="approve" required> Thông qua</label>
+              <label class="choice"><input type="radio" name="vote" value="reject" required> Không thông qua</label>
+            </div>
+          </fieldset>
+          <p class="privacy">Email, nhận xét và lựa chọn biểu quyết được lưu cùng nhau, chỉ người có quyền quản trị được truy cập.</p>
+          <button class="submit" type="submit">Gửi phiếu lấy ý kiến</button>
+          <p id="form-status" class="status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+    <footer>Chi bộ khối Hành chính · Bệnh viện Đa khoa Thủ Đức</footer>
+  </div>
+  <script>
+    const form = document.querySelector('#opinion-form');
+    const status = document.querySelector('#form-status');
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const button = form.querySelector('button[type="submit"]');
+      button.disabled = true;
+      status.className = 'status';
+      status.textContent = 'Đang gửi ý kiến...';
+      const values = Object.fromEntries(new FormData(form));
+      try {
+        const response = await fetch('/api/opinions', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify(values)
+        });
+        if (!response.headers.get('content-type')?.includes('application/json')) {
+          throw new Error('Không nhận được phản hồi hợp lệ. Hãy đăng nhập lại bằng Cloudflare Access rồi thử lại.');
+        }
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.message || 'Không thể gửi ý kiến. Vui lòng thử lại.');
+        form.reset();
+        status.className = 'status success';
+        status.textContent = 'Ý kiến và biểu quyết đã được ghi nhận.';
+      } catch (error) {
+        status.className = 'status error';
+        status.textContent = error.message || 'Có lỗi xảy ra khi gửi ý kiến.';
+      } finally {
+        button.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
